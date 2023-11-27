@@ -13,6 +13,7 @@ class NoloToken:
     """
 
     def __init__(self):
+        self.OpenAIKey = os.getenv("OPENAI_KEY")
         self.secret_key = os.getenv("JWT_SECRET_KEY")
         self.refresh_key = os.getenv("JWT_REFRESH_SECRET_KEY")
         self.algorithm = os.getenv("JWT_ALGORITHM")
